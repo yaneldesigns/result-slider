@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e21d39;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 1600px; /* Adjust the total width to accommodate four images */
+  margin: 30px auto; /* To center the slider */
+ 
+}
+
+.slider {
+  display: flex;
+  animation: slideAnimation 20s infinite;
+}
+
+.slide {
+  flex: 0 0 310px; /* Adjust the width to your preference */
+  height: 310px; /* Square dimensions */
+  padding-right: 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-310px);
+  }
+  40% {
+    transform: translateX(-620px);
+  }
+  60% {
+    transform: translateX(-930px);
+  }
+  80% {
+    transform: translateX(-1240px);
+  }
+  100% {
+    transform: translateX(-1240px);
+  }
+}
